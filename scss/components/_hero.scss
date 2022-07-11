@@ -1,0 +1,36 @@
+.hero {
+    background-image: url('../../img/Hero__img.png');
+    &__content {
+        padding: 125px 0 256px 0;
+    }
+    &__title {
+        max-width: 740px;
+        font-weight: 700;
+        font-size: 52px;
+        margin-bottom: 90px;
+        color: #fff;
+    }
+    &__btn {
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 30px;
+        background: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.4s;
+        &:hover {
+            box-shadow: 0 0 10px 0 orange;
+            color: #333;
+            background-color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero {
+        &__btn {
+            padding: 5px 15px;
+        }
+    }
+}

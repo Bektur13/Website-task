@@ -1,0 +1,54 @@
+.footer {
+    background: #2A2A2A;
+    &__content {
+        padding: 115px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    &__description {
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    &__social {
+        svg {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .vk {
+            transition: 0.5s;
+        }
+        .vk:hover {
+            path {
+                fill: #2a52be;
+            }
+        }
+        .facebook path {
+            transition: 0.5s;
+        }
+        .facebook:hover {
+            path {
+                fill: #2a52be;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        &__content {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
